@@ -1,0 +1,97 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 40px;
+  text-align: center;
+  background-color: rgb(245, 84, 110);
+}
+
+.card {
+  background-color: pink;
+  max-width: 400px;
+  padding: 40px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgb(77, 76, 76);
+  transition: transform 0.3s, background-color 0.3s ease
+}
+
+.card:hover {
+  background-color: rgb(248, 136, 155);
+  transform: scale(1.1);
+}
+
+h1::before {
+  content: "🥳 ";
+}
+
+h1::after {
+  content: " 🥳";
+}
+
+.message {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.card-links {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.card-links a {
+  text-decoration: none;
+  font-size: 1em;
+  padding: 5px 5px;
+  border-radius: 5px;
+  color: white;
+  background-color: midnightblue;
+  transition: background-color 0.3s ease;
+}
+
+.card-links a:hover {
+  background-color: rgb(122, 9, 9);
+}
+
+.card-links a:active {
+  background-color: rgb(122, 9, 9);
+}
+
+.card-links a:focus {
+  outline: 2px solid yellow;
+}
+
+.card-links a:visited {
+  color: crimson;
+}
+
+section {
+  margin: 20px auto;
+  max-width: 600px;
+  background-color: pink;
+  padding: 20px;
+  border-radius: 10px;
+  display:none;
+  box-shadow: 0 4px 8px rgb(71, 70, 70);
+  transition: transform 0.3s, background-color 0.3s ease
+}
+section:target{
+display:block;
+}
+section:hover{
+  transform: scale(1.0);
+  background-color: rgb(248, 136, 155);
+}
+#send h2::before{
+    content:"❤️ "
+}
+#send h2::after{
+    content:" ❤️"
+}
+img{
+    width:150px;
+    height:200px
+}
+hr{
+    width:75%;
+}
